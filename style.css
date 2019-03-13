@@ -54,8 +54,13 @@ header {
     margin: 5px;
     color: #E5E5E5; }
 
-main {
-  max-width: 80%;
+.break-images {
+  height: 75vh;
+  background: url("./assets/images/image-1.jpg");
+  background-size: cover; }
+
+main .container {
+  max-width: 75%;
   margin: auto; }
 
 p {
@@ -89,6 +94,14 @@ section {
       section > div:last-child > div div i {
         color: #CCA43B;
         font-size: 60px; }
+
+.me {
+  display: flex;
+  flex-direction: column; }
+  .me div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 footer {
   background-color: #696773; }
