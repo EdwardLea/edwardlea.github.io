@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
       <nav>
-        <a href="#expereince"> Experience</a>
+        <a href="#skills"> Skills</a>
         <a href="#me"> Me</a>
-        <a href="#project"> Projects</a>
+        <a href="#projects"> Projects</a>
       </nav>
       <section class="hero">
         <h1> Edward Lea </h1>
@@ -33,17 +34,26 @@
             </p>
           </div>
           <div>
-            <div>
-              <h3> Coding
-                <br>
-              <i class="fas fa-plus"></i>
-            </h3>
+            <div class="show-section">
+              <div class="title">
+                <h3 class="symbol"><i class="fas fa-code"></i></h3>
+                <h3 class="word">Coding</h3>
+              </div>
+              <div class="text">
+                <p>The greatest thing about coding is you can never stop learning. There are endless; meetups, online resources, colleagues to share knowledge with. I recently attended the React London meetup at the Facebook offices, which gave me a great insight into how React is being used by the industry. Presentations on state management and front-end testing where particular useful to get a better understanding of best practice within the industry. I’m a regular watch of coding youtube channels. My latest favourite is Fun Fun Function, I love the way Mattias injects so much energy into his videos, and really makes it a fun watch!
+                </p>
+              </div>
             </div>
-            <div >
-              <h3> Outside Coding
-                <br>
-              <i class="fas fa-plus"></i>
-            </h3>
+            <div class="show-section">
+              <div class="title">
+                <h3 class="symbol"><i class="fas fa-power-off"></i></h3>
+                <h3 class="word">Switching Off</h3>
+              </div>
+              <div class="text">
+                <p>
+                  Outside of web development I have two passions; food and architecture. I love to travel around the world appreciating amazing architectural design by some of the greats of the industry. On a recent visit to Bilbao I was able to admire the beautiful Guggenheim Museum design by the American architect Frank Gehry. The creative spirit of the building was truly inspirational. My second passion is food, I love eating it, cooking it, buying it. There is no better day than cooking a great meal for family and friends to enjoy after a hard day of coding. A recent visit to India has inspired me to cook more asian food which I am slowly mastering!
+                </p>
+              </div>
             </div>
 
           </div>
@@ -69,7 +79,7 @@
         </div>
 
       </div>
-      <section class="skills container">
+      <section id="skills" class="skills container">
         <div>
           <span class="sub-heading">Skills</span>
         </div>
@@ -115,28 +125,144 @@
 
         </div>
       </div>
-      <section class=" projects container">
+      <section id="projects" class="projects-section container">
         <div>
           <span class="sub-heading">Projects</span>
         </div>
-        <div>
-          <h3> Project 1</h3>
-          <p> </p>
+
+        <div class="project">
+          <div>
+            <div class="gif battleships">
+
+            </div>
+            <div class="detail-section">
+              <div class="links">
+                <a href="#"> <i class="fab fa-github"></i></a>
+                <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+
+              </div>
+              <div class="description">
+                <h3>Battleships - Single Page JavaScript Browser Game</h3>
+                <p>A 7 day individual project to build a browser game as part of the GA Web Development Immersive course. My project was based on the classic game Battleships where the user plays against the computer. The aim of the game is to find the computer’s ships before the computer finds yours.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tech">
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>JavaScript ES6</div>
+            <div>jQuery</div>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <div class="detail-section">
+
+              <div class="description">
+                <h3>Health & Tasty - Front-end React Hackathon</h3>
+                <p>A 1 day paired coding Hackathon to create a front-end application as part of the General Assembly Web Development Immersive course. The app consumed publicly available API data and was built with a React.js front-end. Using the Food Standards Agency and Zomato APIs we were able to create an app where users could find local food establishments and understand the food hygiene rating.
+                </p>
+              </div>
+              <div class="links">
+                <a href="#"> <i class="fab fa-github"></i></a>
+                <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+
+              </div>
+            </div>
+            <div class="gif health-tasty">
+
+            </div>
+
+          </div>
+          <div class="tech">
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>JavaScript ES6</div>
+            <div>React</div>
+            <div>Sass</div>
+            <div>Bulma</div>
+            <div>Heroku</div>
+            <div>Trello</div>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <div class="gif hidden-gems">
+
+            </div>
+            <div class="detail-section">
+              <div class="links">
+                <a href="#"> <i class="fab fa-github"></i></a>
+                <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+
+              </div>
+              <div class="description">
+                <h3>Hidden Gems - MERN full stack application</h3>
+                <p>A 7 day group project to build a full stack MERN application as part of the General Assembly Web Development Immersive course. The app was based on hidden gems of the world where users can find and add new Gems. The application has full user authentication to create a profile for their Gems and Trips. One area I took ownership of was the user profile page where users could follow other users and create new Trips and Gems. To effectively manage workload and resource we used a Kanban in to form of Trello to plan our project. We ran daily team stand ups to understand project progress and blockers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tech">
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>JavaScript ES6</div>
+            <div>React</div>
+            <div>Express.js</div>
+            <div>MongoDB</div>
+            <div>Mongoose</div>
+            <div>Node.js</div>
+            <div>Sass</div>
+            <div>Webpack</div>
+            <div>Bulma</div>
+            <div>Heroku</div>
+            <div>Trello</div>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <div class="detail-section">
+
+              <div class="description">
+                <h3>Bee Social - Full stack application</h3>
+                <p>A 7 day paired project to build a full stack web application for my final project as part of the General Assembly Web Development Immersive course. The app is a platform where users can create and discover social events in their local area. For example organise a board game club or arrange a five-a-side football game. From a user’s profile they can find and attend events or follow clubs of interest. One area I took ownership of was the club pages where users could follow a club, discover events the club was hosting and chat with other members of the club. Working with another student allowed me to further develop my agile project management and collaborative working skills.
+
+                </p>
+              </div>
+              <div class="links">
+                <a href="#"> <i class="fab fa-github"></i></a>
+                <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+
+              </div>
+            </div>
+            <div class="gif bee-social">
+
+            </div>
+
+          </div>
+          <div class="tech">
+
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>JavaScript ES6</div>
+            <div>Reack</div>
+            <div>Sass</div>
+            <div>Python</div>
+            <div>Flask</div>
+            <div>Webpack</div>
+            <div>Bulma</div>
+            <div>PostgreSQL</div>
+            <div>SQLAlchemy</div>
+            <div>Heroku</div>
+            <div>Trello</div>
+          </div>
         </div>
         <div>
-          <h3> Project 2</h3>
-          <p> </p>
-        </div>
-        <div>
-          <h3> Project 3</h3>
-          <p> </p>
-        </div>
-        <div>
-          <h3> Project 4</h3>
-          <p> </p>
+
         </div>
       </section>
-
     </main>
     <footer>
       <h3>Contact Me</h3>

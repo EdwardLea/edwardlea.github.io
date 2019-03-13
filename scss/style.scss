@@ -14,7 +14,15 @@ body{
   font-family: 'Work Sans', sans-serif;
 }
 
+p{
+  color: $grey;
+}
 
+
+
+section{
+  padding: 100px 20px 100px 20px;
+}
 
 header{
     background-color: $grey;
@@ -93,20 +101,38 @@ header{
   }
 }
 
+.show-section{
+  .title{
+    position: relative;
+    height: 100px;
+    h3{
+      text-align: center;
+      font-size: 50px;
+      position: absolute;
+      margin: 0;
+    }
+    .symbol{
+      display: flex;
+    }
+    .word{
+      display: none;
+    }
+  }
+  .text{
+    display: none;
+  }
+}
+
 
 
 main{
   .container{
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
   }
-
 }
 
-p{
-  color: $grey;
 
-}
 
 
 
@@ -162,6 +188,134 @@ section{
     align-items: center;
   }
 }
+// .projects-section{
+//
+//   .project{
+//     margin-top: 30px;
+//     >div:first-of-type{
+//       display: flex;
+//       height: 200px;
+//       .gif{
+//         width: 1500px;
+//         height: 100%;
+//         background-color: $grey;
+//       }
+//       // .battleships{
+//       //   background: url('./assets/images/battleships.gif');
+//       //   background-size: cover;
+//       //   background-position: center;
+//       // }
+//       // .health-tasty{
+//       //   // background: url('./assets/images/battleships.gif');
+//       //   // background-size: cover;
+//       //   // background-position: center;
+//       // }
+//       .links{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         margin: 0 10px 0 10px;
+//         >a{
+//           text-decoration: none;
+//           color: $yellow;
+//           font-size: 30px;
+//         }
+//       }
+//       .description{
+//         display: flex;
+//         flex-direction: column;
+//       }
+//     }
+//     div:last-child{
+//       padding-top: 10px;
+//       display: flex;
+//       >div{
+//         padding: 5px;
+//         color: $light-grey;
+//         margin: 0 15px 15px 0;
+//         background-color: $yellow;
+//         border-radius: 1px;
+//
+//         // border: $yellow 0.5px solid;
+//       }
+//     }
+//
+//   }
+// }
+
+.projects-section{
+
+  .project{
+    margin-top: 30px;
+    >div:first-child{
+      display: flex;
+      min-height: 250px;
+      height: auto;
+      .gif{
+        flex: 1 0 0;
+        width: 100%;
+      }
+      .battleships{
+        background: url('./assets/images/battleships.gif');
+        background-size: cover;
+        background-position: center;
+      }
+      .hidden-gems{
+        border: $yellow 1px solid;
+        // background: url('./assets/images/battleships.gif');
+        // background-size: cover;
+        // background-position: center;
+      }
+      .health-tasty{
+        border: $yellow 1px solid;
+        // background: url('./assets/images/battleships.gif');
+        // background-size: cover;
+        // background-position: center;
+      }
+      .bee-social{
+        border: $yellow 1px solid;
+        // background: url('./assets/images/battleships.gif');
+        // background-size: cover;
+        // background-position: center;
+      }
+      .detail-section{
+        display: flex;
+        flex: 1 0 0;
+
+        .links{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: 0 10px 0 10px;
+          >a{
+            text-decoration: none;
+            color: $yellow;
+            font-size: 30px;
+          }
+        }
+        .description{
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .tech{
+      padding-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      >div{
+        padding: 5px;
+        color: $light-grey;
+        margin: 0 15px 15px 0;
+        background-color: $yellow;
+        border-radius: 1px;
+      }
+    }
+  }
+}
+
 
 footer{
   background-color: $grey;

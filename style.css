@@ -7,6 +7,12 @@ body {
   color: #CCA43B;
   font-family: 'Work Sans', sans-serif; }
 
+p {
+  color: #696773; }
+
+section {
+  padding: 100px 20px 100px 20px; }
+
 header {
   background-color: #696773;
   height: 100vh; }
@@ -67,12 +73,24 @@ header {
     background-size: cover;
     background-position: center; }
 
-main .container {
-  max-width: 800px;
-  margin: auto; }
+.show-section .title {
+  position: relative;
+  height: 100px; }
+  .show-section .title h3 {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    margin: 0; }
+  .show-section .title .symbol {
+    display: flex; }
+  .show-section .title .word {
+    display: none; }
+.show-section .text {
+  display: none; }
 
-p {
-  color: #696773; }
+main .container {
+  max-width: 1000px;
+  margin: auto; }
 
 .soft-skill {
   display: flex;
@@ -110,6 +128,53 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center; }
+
+.projects-section .project {
+  margin-top: 30px; }
+  .projects-section .project > div:first-child {
+    display: flex;
+    min-height: 250px;
+    height: auto; }
+    .projects-section .project > div:first-child .gif {
+      flex: 1 0 0;
+      width: 100%; }
+    .projects-section .project > div:first-child .battleships {
+      background: url("./assets/images/battleships.gif");
+      background-size: cover;
+      background-position: center; }
+    .projects-section .project > div:first-child .hidden-gems {
+      border: #CCA43B 1px solid; }
+    .projects-section .project > div:first-child .health-tasty {
+      border: #CCA43B 1px solid; }
+    .projects-section .project > div:first-child .bee-social {
+      border: #CCA43B 1px solid; }
+    .projects-section .project > div:first-child .detail-section {
+      display: flex;
+      flex: 1 0 0; }
+      .projects-section .project > div:first-child .detail-section .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 10px 0 10px; }
+        .projects-section .project > div:first-child .detail-section .links > a {
+          text-decoration: none;
+          color: #CCA43B;
+          font-size: 30px; }
+      .projects-section .project > div:first-child .detail-section .description {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column; }
+  .projects-section .project .tech {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .projects-section .project .tech > div {
+      padding: 5px;
+      color: #E5E5E5;
+      margin: 0 15px 15px 0;
+      background-color: #CCA43B;
+      border-radius: 1px; }
 
 footer {
   background-color: #696773; }
