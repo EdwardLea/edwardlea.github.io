@@ -99,7 +99,7 @@ main .container {
     padding: 5px;
     color: #E5E5E5;
     margin: 0 15px 15px 0;
-    background-color: #CCA43B; }
+    background-color: #696773; }
 
 .sub-heading {
   color: #272727;
@@ -118,7 +118,7 @@ section {
     section > div:last-child > div {
       width: 50%; }
       section > div:last-child > div div i {
-        color: #CCA43B;
+        color: #696773;
         font-size: 60px; }
 
 .me {
@@ -136,12 +136,13 @@ section {
     min-height: 250px;
     height: auto; }
     .projects-section .project > div:first-child .gif {
+      display: flex;
+      align-items: center;
       flex: 1 0 0;
       width: 100%; }
-    .projects-section .project > div:first-child .battleships {
-      background: url("./assets/images/battleships.gif");
-      background-size: cover;
-      background-position: center; }
+      .projects-section .project > div:first-child .gif img {
+        width: 100%;
+        height: auto; }
     .projects-section .project > div:first-child .hidden-gems {
       border: #CCA43B 1px solid; }
     .projects-section .project > div:first-child .health-tasty {
@@ -173,7 +174,7 @@ section {
       padding: 5px;
       color: #E5E5E5;
       margin: 0 15px 15px 0;
-      background-color: #CCA43B;
+      background-color: #696773;
       border-radius: 1px; }
 
 footer {
