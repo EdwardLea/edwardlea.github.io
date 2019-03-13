@@ -91,6 +91,18 @@ p{
 
 
 
+.soft-skill{
+  display: flex;
+  flex-wrap: wrap;
+  >div{
+    padding: 5px;
+    color: $light-grey;
+    margin: 0 15px 15px 0;
+    background-color: $yellow;
+    // border: $yellow 0.5px solid;
+  }
+}
+
 
 
 .sub-heading{
@@ -113,7 +125,6 @@ section{
       width: 50%;
 
       div{
-
         i{
           color: $yellow;
           font-size: 60px;

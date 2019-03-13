@@ -61,6 +61,15 @@ main {
 p {
   color: #696773; }
 
+.soft-skill {
+  display: flex;
+  flex-wrap: wrap; }
+  .soft-skill > div {
+    padding: 5px;
+    color: #E5E5E5;
+    margin: 0 15px 15px 0;
+    background-color: #CCA43B; }
+
 .sub-heading {
   color: #272727;
   padding: 10px 40px 10px 40px;
