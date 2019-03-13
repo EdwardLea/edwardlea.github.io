@@ -78,16 +78,26 @@ header{
 
 
 .break-images{
-  height: 75vh;
-  background: url('./assets/images/image-1.jpg');
-  background-size: cover;
+  position: relative;
+  .image-1{
+    height: 75vh;
+    background: url('./assets/images/image-3.jpg');
+    background-size: cover;
+    background-position: bottom;
+  }
+  .image-2{
+    height: 75vh;
+    background: url('./assets/images/image-4.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 
 
 main{
   .container{
-    max-width: 75%;
+    max-width: 800px;
     margin: auto;
   }
 
