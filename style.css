@@ -179,5 +179,21 @@ section {
 
 footer {
   background-color: #696773; }
+  footer .contact {
+    max-width: 60%;
+    height: 100px;
+    margin: auto;
+    display: flex; }
+    footer .contact > a {
+      display: inline-block;
+      color: #CCA43B;
+      border: #CCA43B 0.5px solid;
+      margin: 25px -0.5px 25px -0.5px;
+      height: 50px;
+      width: 33%;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
