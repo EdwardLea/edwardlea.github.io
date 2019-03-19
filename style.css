@@ -56,13 +56,32 @@ header {
   flex-wrap: wrap; }
   .web-icons .icon {
     width: 60px;
+    height: 60px;
     margin: 5px;
-    color: #696773; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .web-icons .icon i {
+      color: #696773;
+      position: absolute; }
+    .web-icons .icon span {
+      color: #E5E5E5;
+      background-color: #696773;
+      padding: 5px;
+      position: absolute;
+      text-align: center;
+      display: none; }
 
-main .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 100px 20px 100px 20px; }
+main {
+  scroll-snap-type: y proximity;
+  overflow-y: auto; }
+  main > section {
+    scroll-snap-align: start; }
+  main .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 20px 100px 20px; }
 
 .soft-skill {
   display: flex;
@@ -101,7 +120,7 @@ main .container {
           margin: 0; }
         .me .show-section > div .title .symbol {
           display: flex; }
-        .me .show-section > div .title .word {
+        .me .show-section > div .title .word span {
           display: none; }
       .me .show-section > div .text {
         display: none; }
@@ -144,62 +163,58 @@ main .container {
         color: #696773;
         font-size: 60px; }
 
-.projects-section {
-  scroll-snap-type: y mandatory;
-  scroll-snap-points-y: repeat(100vh); }
-  .projects-section > .sub-heading {
+.projects-section > .sub-heading {
+  display: flex;
+  justify-content: center; }
+  .projects-section > .sub-heading span {
+    color: #272727;
+    padding: 10px 40px 10px 40px;
+    border: #CCA43B 0.5px solid;
+    margin-top: 20px; }
+.projects-section > .project {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .projects-section > .project > div:first-child {
     display: flex;
-    justify-content: center; }
-    .projects-section > .sub-heading span {
-      color: #272727;
-      padding: 10px 40px 10px 40px;
-      border: #CCA43B 0.5px solid;
-      margin-top: 20px; }
-  .projects-section > .project {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    scroll-snap-align: start;
-    justify-content: center; }
-    .projects-section > .project > div:first-child {
+    min-height: 250px;
+    height: auto; }
+    .projects-section > .project > div:first-child .gif {
       display: flex;
-      min-height: 250px;
-      height: auto; }
-      .projects-section > .project > div:first-child .gif {
+      align-items: center;
+      flex: 1 0 0;
+      width: 100%; }
+      .projects-section > .project > div:first-child .gif img {
+        width: 100%;
+        height: auto; }
+    .projects-section > .project > div:first-child .detail-section {
+      display: flex;
+      flex: 1 0 0; }
+      .projects-section > .project > div:first-child .detail-section .links {
         display: flex;
-        align-items: center;
-        flex: 1 0 0;
-        width: 100%; }
-        .projects-section > .project > div:first-child .gif img {
-          width: 100%;
-          height: auto; }
-      .projects-section > .project > div:first-child .detail-section {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 10px 0 10px; }
+        .projects-section > .project > div:first-child .detail-section .links > a {
+          text-decoration: none;
+          color: #CCA43B;
+          font-size: 30px; }
+      .projects-section > .project > div:first-child .detail-section .description {
+        flex-grow: 1;
         display: flex;
-        flex: 1 0 0; }
-        .projects-section > .project > div:first-child .detail-section .links {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          margin: 0 10px 0 10px; }
-          .projects-section > .project > div:first-child .detail-section .links > a {
-            text-decoration: none;
-            color: #CCA43B;
-            font-size: 30px; }
-        .projects-section > .project > div:first-child .detail-section .description {
-          flex-grow: 1;
-          display: flex;
-          flex-direction: column; }
-  .projects-section .tech {
-    padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .projects-section .tech > div {
-      padding: 5px;
-      color: #E5E5E5;
-      margin: 0 15px 15px 0;
-      background-color: #696773;
-      border-radius: 1px; }
+        flex-direction: column; }
+.projects-section .tech {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .projects-section .tech > div {
+    padding: 5px;
+    color: #E5E5E5;
+    margin: 0 15px 15px 0;
+    background-color: #696773;
+    border-radius: 1px; }
 
 footer {
   background-color: #696773; }
@@ -219,6 +234,62 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center; }
+
+.snap-test {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; }
+  .snap-test div {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: green;
+    border: 3px solid black; }
+
+.arrow {
+  cursor: pointer;
+  height: 120px;
+  left: 50%;
+  position: absolute;
+  top: 85%;
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transition: transform .1s;
+  width: 80px; }
+  .arrow-top, .arrow-bottom {
+    background-color: #CCA43B;
+    height: 2px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%; }
+    .arrow-top:after, .arrow-bottom:after {
+      background-color: #E5E5E5;
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transition: all 0.15s; }
+  .arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right; }
+    .arrow-top:after {
+      left: 100%;
+      right: 0;
+      transition-delay: 0s; }
+  .arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right; }
+    .arrow-bottom:after {
+      left: 0;
+      right: 100%;
+      transition-delay: 0.15s; }
+  .arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s; }
+  .arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s; }
+  .arrow:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.5); }
 
 @media only screen and (max-width: 769px) {
   .show-section {

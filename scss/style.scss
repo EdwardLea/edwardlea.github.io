@@ -80,8 +80,24 @@ header{
   flex-wrap: wrap;
   .icon{
     width: 60px;
+    height: 60px;
     margin: 5px;
-    color: $grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    i{
+      color: $grey;
+      position: absolute;
+    }
+    span{
+      color: $light-grey;
+      background-color: $grey;
+      padding:5px;
+      position: absolute;
+      text-align: center;
+      display: none;
+    }
   }
 }
 
@@ -91,6 +107,11 @@ header{
 
 
 main{
+  scroll-snap-type: y proximity;
+  overflow-y: auto;
+  >section{
+     scroll-snap-align: start;
+  }
   .container{
     max-width: 1000px;
     margin: auto;
@@ -145,7 +166,9 @@ main{
           display: flex;
         }
         .word{
-          display: none;
+          span{
+            display: none;
+          }
         }
       }
       .text{
@@ -219,8 +242,7 @@ main{
 // }
 
 .projects-section{
-    scroll-snap-type: y mandatory;
-    scroll-snap-points-y: repeat(100vh);
+
   >.sub-heading{
     display: flex;
     justify-content: center;
@@ -236,7 +258,6 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    scroll-snap-align: start;
     justify-content: center;
     >div:first-child{
       display: flex;
@@ -310,6 +331,93 @@ footer{
     }
   }
 }
+
+.snap-test{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  div{
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: green;
+    border: 3px solid black;
+  }
+}
+
+
+// ---------- Arrow ----------------
+
+.arrow {
+  cursor: pointer;
+  height: 120px;
+  left: 50%;
+  position: absolute;
+  top: 85%;
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  transition: transform .1s;
+  width: 80px;
+
+  $transition-time: .15s;
+
+  &-top,
+  &-bottom {
+    background-color: $yellow;
+    height: 2px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+
+    &:after {
+      background-color: $light-grey;
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transition: all $transition-time;
+    }
+  }
+
+  &-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+
+    &:after {
+      left: 100%;
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+
+  &-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+
+    &:after {
+      left: 0;
+      right: 100%;
+      transition-delay: $transition-time;
+    }
+  }
+
+  &:hover & {
+
+    &-top:after {
+      left: 0;
+      transition-delay: $transition-time;
+    }
+
+    &-bottom:after {
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+  }
+}
+
 
 
 @media only screen and (max-width: 768px) {
