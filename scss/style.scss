@@ -57,13 +57,22 @@ header{
     .hero{
       background-color: $grey;
       color: $yellow;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
       height: 80%;
+      position: relative;
       h1{
         margin: 0;
+        font-size: 60px;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+      }
+      h2{
+        margin: 0;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        right: 30%;
       }
     }
 }
@@ -138,8 +147,10 @@ main{
   flex-direction: column;
   h2{
     text-align: center;
+    font-size: 16px;
+    margin-bottom: 50px;
     span{
-      color: $black;
+      color: $grey;
       padding: 10px 40px 10px 40px;
       border: $yellow 0.5px solid;
       margin-top: 20px;
@@ -207,6 +218,8 @@ main{
     >.sub-heading{
       display: flex;
       justify-content: center;
+      margin-bottom: 50px;
+
       span{
         color: $black;
         padding: 10px 40px 10px 40px;
@@ -312,6 +325,9 @@ main{
 
 footer{
   background-color: $grey;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   .contact{
     height: 100px;
     margin: auto;
@@ -346,6 +362,8 @@ footer{
 
 
 // ---------- Arrow ----------------
+
+
 
 .arrow {
   cursor: pointer;
@@ -418,6 +436,26 @@ footer{
   }
 }
 
+.arrow-section{
+  position: relative;
+  padding-top: 150px;
+  .arrow {
+
+    &-top,
+    &-bottom {
+      background-color: $grey;
+
+
+
+      &:after {
+        background-color: $yellow;
+
+      }
+    }
+  }
+}
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -456,6 +494,7 @@ footer{
 
 
   footer{
+
     .contact{
       flex-direction: column;
       justify-content: center;
