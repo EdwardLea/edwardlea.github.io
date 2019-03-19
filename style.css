@@ -267,7 +267,7 @@ footer {
       height: 100%;
       position: absolute;
       top: 0;
-      transition: all 0.15s; }
+      transition: all 0.25s; }
   .arrow-top {
     transform: rotate(45deg);
     transform-origin: bottom right; }
@@ -281,10 +281,10 @@ footer {
     .arrow-bottom:after {
       left: 0;
       right: 100%;
-      transition-delay: 0.15s; }
+      transition-delay: 0.25s; }
   .arrow:hover .arrow-top:after {
     left: 0;
-    transition-delay: 0.15s; }
+    transition-delay: 0.25s; }
   .arrow:hover .arrow-bottom:after {
     right: 0;
     transition-delay: 0s; }
