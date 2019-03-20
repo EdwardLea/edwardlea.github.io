@@ -48,7 +48,7 @@ header {
     position: relative; }
     header .hero h1 {
       margin: 0;
-      font-size: 60px;
+      font-size: 4em;
       position: absolute;
       top: 20%;
       left: 20%; }
@@ -58,6 +58,25 @@ header {
       position: absolute;
       top: 50%;
       right: 30%; }
+
+@keyframes animateOverlay {
+  to {
+    opacity: 1;
+    bottom: 0; } }
+.hero h1 span, .hero h2 span {
+  position: relative;
+  opacity: 0;
+  animation: animateOverlay 1s ease-in-out forwards; }
+.hero h1 span:nth-child(4n), .hero h2 span:nth-child(4n) {
+  animation-delay: 0s; }
+.hero h1 span:nth-child(4n+1), .hero h2 span:nth-child(4n+1) {
+  animation-delay: 1s; }
+.hero h1 span:nth-child(4n+3), .hero h2 span:nth-child(4n+3) {
+  animation-delay: 2s; }
+.hero h1 span:nth-child(4n+2), .hero h2 span:nth-child(4n+2) {
+  animation-delay: 3s; }
+.hero h2 span {
+  top: 1em; }
 
 .web-icons {
   display: flex;
@@ -249,16 +268,6 @@ footer {
       justify-content: center;
       align-items: center; }
 
-.snap-test {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh; }
-  .snap-test div {
-    height: 100vh;
-    scroll-snap-align: start;
-    background-color: green;
-    border: 3px solid black; }
-
 .arrow {
   cursor: pointer;
   height: 120px;
@@ -329,8 +338,13 @@ footer {
     .skills .container .skills-body .web-icons, .skills .container .skills-body .soft-skill {
       justify-content: center; }
 
-  .project > div:first-child {
-    flex-direction: column; }
+  .projects-section .project {
+    height: auto;
+    margin: 2em; }
+    .projects-section .project .arrow-section {
+      display: none; }
+    .projects-section .project > div:first-child {
+      flex-direction: column; }
 
   footer .contact {
     flex-direction: column;
