@@ -58,9 +58,9 @@ header {
       position: absolute;
       top: 50%;
       right: 30%; }
-    header .hero div {
+    header .hero .arrow {
       position: absolute;
-      top: 70%;
+      top: 80%;
       left: 50%; }
 
 @keyframes animateOverlay {
