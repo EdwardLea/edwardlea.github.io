@@ -16,27 +16,43 @@
   <body>
     <header id="header">
       <nav>
-        <a href="#skills"> Skills</a>
-        <a href="#me"> Me</a>
-        <a href="#projects"> Projects</a>
+        <div>
+          <a href="#skills"><div> Skills</div></a>
+          <a href="#me"><div>Me</div></a>
+          <a href="#projects"><div>Projects</div></a>
+        </div>
+        <div>
+          <div>
+            <p>London</p>
+          </div>
+          <div>
+            <p>
+              <a> github.com/EdwardLea</a> •
+              <a> linkedin.com/in/edward-lea</a> •
+              <a> etmlea@gmail.com</a>
+            </p>
+          </div>
+        </div>
       </nav>
       <section class="hero">
-        <h1>Edward Lea </h1>
-        <h2>Web Developer</h2>
-        <!-- <div> -->
+        <div>
+          <h1>Edward Lea</h1>
+        </div>
+        <div>
+          <h2>Web Developer</h2>
+        </div>
         <a href="#me">
           <div class="arrow">
             <div class="arrow-top"></div>
             <div class="arrow-bottom"></div>
           </div>
         </a>
-        <!-- </div> -->
       </section>
     </header>
     <main>
-      <section id="me" class="me">
+      <section id="me" class="me" data-aos="fade-bottom" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
         <div class="container">
-          <h2> <span>Me</span> </h2>
+          <h2><span>Me</span></h2>
             <div class="body">
               <p>
                 After 8 years in the management consultancy and project management sectors, I needed a new career challenge. I looked back over my career to work out what I truly enjoyed. Speaking to people that had worked with me I soon discovered what I really loved; problem solving, logic, being creative, having structure to my work and something to show for my work. This is where my coding journey began and after completing various online coding courses I signed up to do the Web Development Immersive at General Assembly (GA).
@@ -119,11 +135,11 @@
         <div class="image-2">
         </div>
       </div>
-      <section id="projects" class="projects-section container">
+      <section  class="projects-section container">
         <div class="sub-heading">
           <span >Projects</span>
         </div>
-        <div class="project">
+        <div id="projects" class="project">
           <div>
             <div class="gif battleships" data-aos="fade-right" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
               <img src="./assets/images/battleships.gif" alt="battleships">
@@ -157,8 +173,12 @@
         </div>
         <div id="project-2" class="project">
           <div>
-            <div class="detail-section" data-aos="fade-right" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
-
+            <div
+              class="detail-section"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000">
               <div class="description" >
                 <h3>Health & Tasty - Front-end React Hackathon</h3>
                 <p>A one day paired coding Hackathon to create a front-end application as part of the General Assembly Web Development Immersive course. The app consumed publicly available API data and was built with a React.js front-end. Using the Food Standards Agency and Zomato APIs we were able to create an app where users could find local food establishments and understand the food hygiene rating.
@@ -166,15 +186,26 @@
               </div>
               <div class="links">
                 <a href="#"> <i class="fab fa-github"></i></a>
-                <a href="https://react-health-and-tasty.herokuapp.com/" target="_blank"> <i class="fas fa-external-link-alt"></i></a>
+                <a
+                href="https://react-health-and-tasty.herokuapp.com/"
+                target="_blank"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
-            <div class="gif bee-social" data-aos="fade-left" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
+            <div
+              class="gif bee-social"
+              data-aos="fade-left" data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000">
               <img src="./assets/images/bee-social.gif" alt="bee social">
             </div>
 
           </div>
-          <div class="tech" data-aos="fade-bottom" data-aos-delay="1500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <div
+            class="tech"
+            data-aos="fade-bottom"
+            data-aos-delay="1500"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
             <div>HTML5</div>
             <div>CSS3</div>
             <div>JavaScript ES6</div>
@@ -184,7 +215,10 @@
             <div>Heroku</div>
             <div>Trello</div>
           </div>
-          <div class="arrow-section" data-aos="fade-bottom" data-aos-delay="2500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <div
+            class="arrow-section"
+            data-aos="fade-bottom"
+            data-aos-delay="2500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <a href="#project-3">
               <div class="arrow">
                 <div class="arrow-top"></div>
@@ -195,10 +229,20 @@
         </div>
         <div id="project-3" class="project">
           <div>
-            <div class="gif hidden-gems" data-aos="fade-right" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
+            <div
+              class="gif hidden-gems"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000">
               <img src="./assets/images/hidden-gems.gif" alt="hidden gems">
             </div>
-            <div class="detail-section" data-aos="fade-left" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
+            <div
+              class="detail-section"
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000">
               <div class="links">
                 <a href="#"> <i class="fab fa-github"></i></a>
                 <a href="https://hidden-gems-2.herokuapp.com/" target="_blank"> <i class="fas fa-external-link-alt"></i></a>
@@ -211,7 +255,12 @@
               </div>
             </div>
           </div>
-          <div class="tech" data-aos="fade-bottom" data-aos-delay="1500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <div
+            class="tech"
+            data-aos="fade-bottom"
+            data-aos-delay="1500"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">
             <div>HTML5</div>
             <div>CSS3</div>
             <div>JavaScript ES6</div>
@@ -238,11 +287,9 @@
         <div id="project-4" class="project">
           <div>
             <div class="detail-section" data-aos="fade-right" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
-
               <div class="description" >
                 <h3>Bee Social - Full stack application</h3>
                 <p>A seven day paired project to build a full stack web application for my final project as part of the General Assembly Web Development Immersive course. The app is a platform where users can create and discover social events in their local area. For example organise a board game club or arrange a five-a-side football game. From a user’s profile they can find and attend events or follow clubs of interest. I took ownership of the club pages where users could follow a club, discover events the club was hosting and chat with other members of the club. Collaborating with another student allowed me to further develop my agile project management and team working skills.
-
                 </p>
               </div>
               <div class="links">
@@ -282,14 +329,16 @@
           </div>
         </div>
       </section>
+
     </main>
+
     <footer id='contact'>
       <div class="contact">
         <a><i class="fab fa-github"></i> EdwardLea</a>
         <a><i class="fab fa-linkedin-in"></i> linkedin.com/in/edward-lea</a>
         <a><i class="fas fa-envelope-square"></i> etmlea@gmail.com</a>
       </div>
-
     </footer>
+
   </body>
 </html>
