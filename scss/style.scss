@@ -24,12 +24,16 @@ header{
     height: 100vh;
     background-attachment: fixed;
     nav{
+      display: flex;
+      justify-content: center;
+      .nav-body{
       height: 20%;
       margin: auto;
       display: flex;
       position: fixed;
       top: 10px;
       width: 100%;
+      max-width: 800px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -88,6 +92,7 @@ header{
         div:last-child{
           flex-grow: 1;
         }
+      }
       }
     }
     .hero{
@@ -513,14 +518,48 @@ footer{
 
 @media only screen and (max-width: 769px) {
 
-  .show-section{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p{
-      width: 100%
+  header{
+    nav{
+      .nav-body{
+        height: 40%;
+        position: relative;
+        >div:first-child{
+          flex-direction: column;
+          width: 50%;
+          border: none;
+          height: auto;
+          a{
+            height: 40px;
+          }
+        }
+        >div:nth-child(2){
+          flex-direction: column;
+          width: 50%;
+          height: auto;
+          margin: auto;
+
+
+        }
+      }
+    }
+    .hero{
+      height: 60%;
     }
   }
+
+  .me{
+    height: auto;
+    .show-section{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p{
+        width: 100%
+      }
+    }
+  }
+
+
   .skills{
     .container{
       .skills-body{
