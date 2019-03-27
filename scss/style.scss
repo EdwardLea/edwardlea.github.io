@@ -8,22 +8,55 @@ $black: #272727;
   scroll-behavior: smooth;
 }
 
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 body{
   background-color: $light-grey;
   margin: 0;
   color: $yellow;
   font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
 }
 
 p{
   color: $grey;
 }
 
+h1,h2,h3{
+  font-weight: 100;
+}
+
+main{
+  .container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 20px 100px 20px;
+  }
+}
+
 header{
     background-color: $grey;
     height: 100vh;
     background-attachment: fixed;
+    width: 100vw;
     nav{
+      .nav-toggle{
+        display: none;
+      }
       display: flex;
       justify-content: center;
       .nav-body{
@@ -32,8 +65,9 @@ header{
       display: flex;
       position: fixed;
       top: 10px;
+      padding: 0 20px 0 20px;
       width: 100%;
-      max-width: 800px;
+      max-width: 1000px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -41,17 +75,16 @@ header{
       >div{
           color: $yellow;
           border: $yellow 0.5px solid;
-          margin: -0.5px;
           background-color: $grey;
           width:100%;
+          // max-width: 1000px;
           margin: -0.5px 20px -0.5px 20px;
-          max-width: 1000px;
       }
       >div:first-child{
         display: flex;
         height: 25%;
-        // width: 100%;
         padding: 0;
+        width: 100%;
         >a{
           flex-grow: 1;
           display: flex;
@@ -59,80 +92,84 @@ header{
           align-items: center;
           border: $yellow 0.5px solid;
           color: $yellow;
-          margin: -0.5px;
+          margin: -0.5px -0.5px -0.5px -0.5px;
           text-decoration: none;
         }
-
-        // a{
-        //   flex-grow: 1;
-        //   color: $yellow;
-        //   border: $yellow 0.5px solid;
-        //   margin-right: -0.5px;
-        //   margin-left: -0.5px;
-        //   height: 50px;
-        //   text-decoration: none;
-        //   display: flex;
-        //   justify-content: center;
-        //   align-items: center;
-        // }
       }
       >div:nth-child(2){
         height: 25%;
         display: flex;
         text-align: right;
         align-items: center;
+        width: 100%;
         div{
           p{
             text-align: right;
             color: $yellow;
             width: 100%;
             padding: 0 10px 0 10px;
+            a{
+              text-decoration: none;
+              color: $yellow;
+            }
           }
         }
         div:last-child{
           flex-grow: 1;
         }
       }
-      }
     }
-    .hero{
-      background-color: $grey;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    >div{
+      border-bottom: $yellow 0.5px solid;
+      padding: 5px 20px 5px 20px;
       color: $yellow;
-      height: 100%;
-      position: relative;
-      >div{
-        border: $yellow 0.5px solid;
-        width: 40%;
-        padding: 5px 20px 5px 20px;
-        color: $yellow;
-        h1{
-          margin: 0;
-          text-align: center;
-          display: flex;
-          font-size: 4em;
-          span{
-          }
+      h1,h2{
+        margin: 0;
+        display: flex;
+        span{
+        position: relative;
+        opacity: 0;
+        animation: animateOverlay 0.5s ease-in-out forwards;
         }
-        h2{
-          margin: 0;
-          display: flex;
-          font-size: 40px;
+        span:nth-child(4n) {
+          animation-delay:0s;
+        }
+        span:nth-child(4n+1) {
+          animation-delay: 1s;
+        }
+        span:nth-child(4n+3) {
+          animation-delay: 2s;
+        }
+        span:nth-child(4n+2) {
+          animation-delay: 3s;
         }
       }
-
-
-      .arrow{
-        position: absolute;
-        top: 80%;
-        left: 50%;
+      h1{
+        text-align: center;
+        font-size: 4em;
+      }
+      h2{
+        font-size: 2.5em;
+        span{
+          top: 0em;
+        }
       }
     }
+    .arrow{
+      position: absolute;
+      top: 80%;
+      left: 50%;
+    }
+  }
 }
-
 
 @keyframes animateOverlay {
   to {
@@ -140,98 +177,29 @@ opacity: 1;
 bottom: 0;
 } }
 
-.hero {
-  h1, h2{
-    span{
-    position: relative;
-    opacity: 0;
-    // bottom: 1em;
-    animation: animateOverlay 0.5s ease-in-out forwards;
-    }
-    span:nth-child(4n) {
-      animation-delay:0s;
-    }
-    span:nth-child(4n+1) {
-      animation-delay: 1s;
-    }
-    span:nth-child(4n+3) {
-      animation-delay: 2s;
-    }
-    span:nth-child(4n+2) {
-      animation-delay: 3s;
-    }
-  }
-  h2{
-    span{
-      top: 0em;
-    }
-  }
+
+// ------------ Section break images------------------
+
+.image-1{
+  position: relative;
+  height: 100vh;
+  background: url('./assets/images/image-3.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-
-// ----------------Me----------------------
-
-
-
-// --------------SKills-----------------------
-
-.web-icons{
-  display: flex;
-  flex-wrap: wrap;
-  .icon{
-    width: 60px;
-    height: 60px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    i{
-      color: $grey;
-      position: absolute;
-    }
-    span{
-      color: $light-grey;
-      background-color: $grey;
-      padding:5px;
-      position: absolute;
-      text-align: center;
-      display: none;
-    }
-  }
+.image-2{
+  height: 100vh;
+  background: url('./assets/images/image-4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-
-
-
-
-
-main{
-  scroll-snap-type: y proximity;
-  overflow-y: auto;
-  >section{
-     scroll-snap-align: start;
-  }
-  .container{
-    max-width: 1000px;
-    margin: auto;
-    padding: 100px 20px 100px 20px;
-  }
-}
-
-
-.soft-skill{
-  display: flex;
-  flex-wrap: wrap;
-  >div{
-    padding: 5px;
-    color: $light-grey;
-    margin: 0 15px 15px 0;
-    background-color: $grey;
-    // border: $yellow 0.5px solid;
-  }
-}
-
+// --------------About me section------------------------
 
 .me{
   display: flex;
@@ -242,12 +210,17 @@ main{
     text-align: center;
     font-size: 16px;
     margin-bottom: 50px;
+
     span{
       color: $grey;
+      font-weight: 100;
       padding: 10px 40px 10px 40px;
       border: $yellow 0.5px solid;
       margin-top: 20px;
     }
+  }
+  p{
+    font-weight: 200;
   }
   .show-section{
     display: flex;
@@ -266,12 +239,20 @@ main{
           position: absolute;
           margin: 0;
         }
-        .symbol{
-          display: flex;
+        i{
+          opacity: 0;
+          transition: all 0.75s ease-in-out;
+        }
+        i.show{
+          opacity: 1;
         }
         .word{
           span{
-            display: none;
+            opacity: 0;
+            transition: all 0.75s ease-in-out;
+          }
+          span.show{
+            opacity: 1;
           }
         }
       }
@@ -282,29 +263,9 @@ main{
   }
 }
 
-
-  .image-2{
-    height: 100vh;
-    background: url('./assets/images/image-4.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    // background-position: center;
-    background-repeat: no-repeat;
-  }
-
+// --------------Skills Section--------------------
 
 .skills{
-  .image-1{
-    position: relative;
-    height: 100vh;
-    background: url('./assets/images/image-3.jpg');
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    // background-position: center;
-    background-repeat: no-repeat;
-  }
   .container{
     height: 100vh;
     display: flex;
@@ -314,7 +275,6 @@ main{
       display: flex;
       justify-content: center;
       margin-bottom: 50px;
-
       span{
         color: $black;
         padding: 10px 40px 10px 40px;
@@ -337,9 +297,55 @@ main{
           }
         }
       }
+      .web-icons{
+        display: flex;
+        flex-wrap: wrap;
+        .icon{
+          width: 60px;
+          height: 60px;
+          margin: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          i{
+            color: $grey;
+            position: absolute;
+            transition: all 0.75s ease-in-out;
+            opacity: 0;
+          }
+          i.show{
+            opacity: 1;
+          }
+          span{
+            color: $light-grey;
+            background-color: $grey;
+            padding:5px;
+            position: absolute;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.75s ease-in-out;
+          }
+          span.show{
+            opacity: 1;
+          }
+        }
+      }
+      .soft-skill{
+        display: flex;
+        flex-wrap: wrap;
+        >div{
+          padding: 5px;
+          color: $light-grey;
+          margin: 0 15px 15px 0;
+          background-color: $grey;
+        }
+      }
     }
   }
 }
+
+// ---------------Projects Section-------------------------
 
 .projects-section{
   >.sub-heading{
@@ -353,7 +359,6 @@ main{
     }
   }
   >.project{
-    // margin-top: 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -390,6 +395,7 @@ main{
           flex-grow: 1;
           display: flex;
           flex-direction: column;
+          font-weight: 300;
         }
       }
     }
@@ -408,36 +414,79 @@ main{
       border-radius: 1px;
     }
   }
+  .arrow-section{
+    position: relative;
+    padding-top: 50px;
+    .arrow {
+      &-top,
+      &-bottom {
+        background-color: $grey;
+        &:after {
+          background-color: $yellow;
+        }
+      }
+    }
+  }
 }
 
 footer{
   background-color: $grey;
   height: 100vh;
   display: flex;
-  align-items: center;
+  width: auto;
   .contact{
-    height: 100px;
+    height: 100%;
     margin: auto;
     display: flex;
-    justify-content: center;
-    >a{
-      display: inline-block;
-      color: $yellow;
-      border: $yellow 0.5px solid;
-      margin: 25px -0.5px 25px -0.5px;
-      height: 50px;
-      width: 250px;
-      text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    >div:first-child{
+      font-size: 50px;
+      padding-top: 80px;
+    }
+    .sub-heading{
+      span{
+        color: $light-grey;
+        padding: 10px 40px 10px 40px;
+        border: $yellow 0.5px solid;
+        margin-top: 20px;
+      }
+    }
+    >.contact-details{
       display: flex;
       justify-content: center;
       align-items: center;
+      >a{
+        color: $yellow;
+        position: relative;
+        font-size: 40px;
+        // border: $yellow 0.5px solid;
+        margin: 25px -0.5px 25px -0.5px;
+        height: 50px;
+        width: 250px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        i,span{
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease-in-out;
+        }
+        .show{
+          opacity: 1;
+        }
+        span{
+          font-size: 16px;
+        }
+      }
     }
   }
 }
-
 // ---------- Arrow ----------------
-
-
 
 .arrow {
   cursor: pointer;
@@ -499,20 +548,6 @@ footer{
   }
 }
 
-.arrow-section{
-  position: relative;
-  padding-top: 50px;
-  .arrow {
-    &-top,
-    &-bottom {
-      background-color: $grey;
-      &:after {
-        background-color: $yellow;
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 768px) {
 }
 
@@ -520,33 +555,51 @@ footer{
 
   header{
     nav{
+      .nav-toggle{
+        margin-top: 20px;
+        display: flex;
+      }
       .nav-body{
+        display: flex;
+        margin-top: 20px;
         height: 40%;
-        position: relative;
+        position: absolute;
         >div:first-child{
           flex-direction: column;
           width: 50%;
           border: none;
           height: auto;
+          min-width: 300px;
           a{
             height: 40px;
+            border-color: $grey;
+            color: $grey;
+            transition: all 0.5s ease-in-out;
           }
         }
         >div:nth-child(2){
+          display: none;
           flex-direction: column;
           width: 50%;
           height: auto;
-          margin: auto;
-
-
+          min-width: 300px;
+          margin: 0;
+          margin: -0.5px 0 0 0;
+        }
+      }
+      .nav-body.show{
+        >div:first-child{
+          a{
+            border-color: $yellow;
+            color: $yellow;
+          }
         }
       }
     }
     .hero{
-      height: 60%;
+      height: 100%;
     }
   }
-
   .me{
     height: auto;
     .show-section{
@@ -558,10 +611,9 @@ footer{
       }
     }
   }
-
-
   .skills{
     .container{
+      height: auto;
       .skills-body{
         flex-direction: column;
         align-items: center;
@@ -574,7 +626,6 @@ footer{
       }
     }
   }
-
   .projects-section{
     .project{
       height: auto;
@@ -584,28 +635,35 @@ footer{
       }
       >div:first-child{
         flex-direction: column;
+        .detail-section{
+          flex-direction: column;
+          >.links{
+            flex-direction: row;
+            padding: 20px;
+          }
+        }
       }
     }
-
   }
-
-
-
   footer{
-
     .contact{
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
+      height: 100%;
       align-items: center;
-      height: auto;
       padding: 20px;
-      a{
-        width: 250px;
-        padding: 10px;
-        margin-top: -0.5px;
-        margin-bottom: -0.5px;
+      .contact-details{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        >a{
+          width: auto;
+          // width: 250px;
+          padding: 20px;
+          margin-top: -0.5px;
+          margin-bottom: -0.5px;
+        }
       }
     }
   }
-
 }

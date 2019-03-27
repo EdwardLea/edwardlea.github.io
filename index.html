@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js" charset="utf-8"></script>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -16,26 +16,28 @@
   <body>
     <header id="header">
       <nav>
+        <span class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
         <div class="nav-body">
           <div>
-            <a href="#skills"><div> Skills</div></a>
-            <a href="#me"><div>Me</div></a>
-            <a href="#projects"><div>Projects</div></a>
+            <a href="#skills"><div>skills</div></a>
+            <a href="#me"><div>EdwardLea</div></a>
+            <a href="#projects"><div>projects</div></a>
           </div>
-          <div>
+          <div class="contact-header">
             <div>
               <p>London</p>
             </div>
             <div>
               <p>
-                <a> github.com/EdwardLea</a> •
-                <a> linkedin.com/in/edward-lea</a> •
-                <a> etmlea@gmail.com</a>
+                <a href="github.com/EdwardLea" target="_blank"> github.com/EdwardLea</a> •
+                <a href="inkedin.com/in/edward-lea" target="_blank"> linkedin.com/in/edward-lea</a> •
+                <a href="mailto:etmlea@gmail.com"> etmlea@gmail.com</a>
               </p>
             </div>
           </div>
         </div>
-
       </nav>
       <section class="hero">
         <div>
@@ -53,75 +55,172 @@
       </section>
     </header>
     <main>
-      <section id="me" class="me" data-aos="fade-bottom" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+      <section
+        id="me"
+        class="me"
+        data-aos="fade-bottom"
+        data-aos-duration="2000"
+        data-aos-anchor-placement="top-bottom"
+      >
         <div class="container">
-          <h2><span>Me</span></h2>
+          <h2><span>me</span></h2>
             <div class="body">
               <p>
                 After 8 years in the management consultancy and project management sectors, I needed a new career challenge. I looked back over my career to work out what I truly enjoyed. Speaking to people that had worked with me I soon discovered what I really loved; problem solving, logic, being creative, having structure to my work and something to show for my work. This is where my coding journey began and after completing various online coding courses I signed up to do the Web Development Immersive at General Assembly (GA).
               </p>
               <p>
-              I have always loved learning and developing new ideas, seeing them come to fruition. Whether that be delivering complex infrastructure projects during my time working in the Engineering & Construction sector, or building a well-designed customer focused application as part of my course at GA. These experiences have developed my skills in effective team working, clear communication and project management. My desire to learn continues as I seek to work for an organisation that shares my values and allows me to develop in a fast-paced and exciting environment.
+                I have always loved learning and developing new ideas, seeing them come to fruition. Whether that be delivering complex infrastructure projects during my time working in the Engineering & Construction sector, or building a well-designed customer focused application as part of my course at GA. These experiences have developed my skills in effective team working, clear communication and project management. My desire to learn continues as I seek to work for an organisation that shares my values and allows me to develop in a fast-paced and exciting environment.
               </p>
             </div>
             <div class="show-section">
               <div class="coding">
-                <div class="title">
-                  <h3 class="symbol"><i class="fas fa-code"></i></h3>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="3000"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="2000"
+                  class="title">
+                  <h3 class="symbol"><i class="fas fa-code show"></i></h3>
                   <h3 class="word"><span>Coding</span></h3>
                 </div>
                 <div class="text">
-                  <p>The reason I love coding is you can never stop learning. There are endless meetups, online resources and colleagues to share knowledge with. I recently attended the React London meetup at the Facebook offices, which gave me a great insight into how React is being used by the industry. Presentations on state management and front-end testing were particularly useful to get a better understanding of best practice within the industry. I’m a regular watcher of coding youtube channels. My latest favourite is Fun Fun Function, I love the way Mattias injects so much energy into his videos, and really makes it a 'Fun' watch!
+                  <p>
+                    The reason I love coding is you can never stop learning. There are endless meetups, online resources and colleagues to share knowledge with. </p>
+                  <p>
+                    I recently attended the React London meetup at the Facebook offices, which gave me a great insight into how React is being used by the industry. Presentations on state management and front-end testing were particularly useful to get a better understanding of best practice within the industry.
+                  </p>
+                  <p>
+                    I’m a regular watcher of coding youtube channels. My latest favourite is Fun Fun Function, I love the way Mattias injects so much energy into his videos, and really makes it a 'Fun' watch!
                   </p>
                 </div>
               </div>
               <div class="outside">
-                <div class="title">
-                  <h3 class="symbol"><i class="fas fa-power-off"></i></h3>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="3000"
+                  data-aos-anchor-placement="bottom-bottom"
+                  data-aos-duration="2000"
+                  class="title">
+                  <h3 class="symbol"><i class="fas fa-power-off show"></i></h3>
                   <h3 class="word"><span>Switch Off</span></h3>
                 </div>
                 <div class="text">
                   <p>
-                    Outside of web development I have two passions; food and architecture. I love to travel around the world appreciating amazing architectural design by some of the greats of the industry. On a recent visit to Bilbao I was able to admire the beautiful Guggenheim Museum design by the American architect Frank Gehry. The creative spirit of the building was truly inspirational. My second passion is food, I love eating it, cooking it, buying it. There is no better day than cooking a great meal for family and friends to enjoy after a hard day of coding. A recent visit to India has inspired me to cook more asian food which I am slowly mastering!
+                    Outside of web development I have two passions; food and architecture. I love to travel around the world appreciating amazing architectural design by some of the greats of the industry. On a recent visit to Bilbao I was able to admire the beautiful Guggenheim Museum design by the American architect Frank Gehry. The creative spirit of the building was truly inspirational.
+                  </p>
+                  <p>
+                    My second passion is food, I love eating it, cooking it, buying it. There is no better day than cooking a great meal for family and friends to enjoy after a hard day of coding. A recent visit to India has inspired me to cook more asian food which I am slowly mastering!
                   </p>
                 </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="break-images image-1">
+      </div>
       <section class="skills">
-        <div class="break-images image-1">
-        </div>
         <div id="skills" class="container">
           <div  class="sub-heading">
-            <span>Skills</span>
+            <span>skills</span>
           </div>
           <div class="skills-body">
-            <div class="web-logos" data-aos="zoom-in" data-aos-delay="500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <div
+              class="web-logos"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000">
               <h3>Technical</h3>
               <div class="web-icons">
-                <div class="icon"><span>Express</span><i class="devicon-express-original"></i></div>
-                <div class="icon"><span>Babel</span><i class="devicon-babel-plain"></i></div>
-                <div class="icon"><span>Atom</span><i class="devicon-atom-original"></i></div>
-                <div class="icon"><span>Git</span><i class="devicon-git-plain"></i></div>
-                <div class="icon"><span>GitHub</span><i class="devicon-github-plain"></i></div>
-                <div class="icon"><span>CSS3</span><i class="devicon-css3-plain"></i></div>
-                <div class="icon"><span>Heroku</span><i class="devicon-heroku-original"></i></div>
-                <div class="icon"><span>HTML5</span><i class="devicon-html5-plain"></i></div>
-                <div class="icon"><span>JavaScript ES6</span><i class="devicon-javascript-plain"></i></div>
-                <div class="icon"><span>jQuery</span><i class="devicon-jquery-plain"></i></div>
-                <div class="icon"><span>Mocha</span><i class="devicon-mocha-plain"></i></div>
-                <div class="icon"><span>MongoDB</span><i class="devicon-mongodb-plain"></i></div>
-                <div class="icon"><span>Node.js</span><i class="devicon-nodejs-plain"></i></div>
-                <div class="icon"><span>PostgreSQL</span><i class="devicon-postgresql-plain"></i></div>
-                <div class="icon"><span>Python</span><i class="devicon-python-plain"></i></div>
-                <div class="icon"><span>React</span><i class="devicon-react-original"></i></div>
-                <div class="icon"><span>Sass</span><i class="devicon-sass-original"></i></div>
-                <div class="icon"><span>Slack</span><i class="devicon-slack-plain"></i></div>
-                <div class="icon"><span>Webpack</span><i class="devicon-webpack-plain"></i></div>
+                <div class="icon">
+                  <span>JavaScript ES6</span>
+                  <i class="devicon-javascript-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Python</span>
+                  <i class="devicon-python-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>HTML5</span>
+                  <i class="devicon-html5-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>CSS3</span>
+                  <i class="devicon-css3-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Sass</span>
+                  <i class="devicon-sass-original show"></i>
+                </div>
+                <div class="icon">
+                  <span>Atom</span>
+                  <i class="devicon-atom-original show"></i>
+                </div>
+                <div class="icon">
+                  <span>Babel</span>
+                  <i class="devicon-babel-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Webpack</span>
+                  <i class="devicon-webpack-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Git</span>
+                  <i class="devicon-git-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>GitHub</span>
+                  <i class="devicon-github-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>jQuery</span>
+                  <i class="devicon-jquery-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>React</span>
+                  <i class="devicon-react-original show"></i>
+                </div>
+                <div class="icon">
+                  <span>Mocha</span>
+                  <i class="devicon-mocha-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Node.js</span>
+                  <i class="devicon-nodejs-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Express</span>
+                  <i class="devicon-express-original show"></i>
+                </div>
+                <div class="icon">
+                  <span>MongoDB</span>
+                  <i class="devicon-mongodb-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>PostgreSQL</span>
+                  <i class="devicon-postgresql-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Python</span>
+                  <i class="devicon-python-plain show"></i>
+                </div>
+                <div class="icon">
+                  <span>Heroku</span>
+                  <i class="devicon-heroku-original show"></i>
+                </div>
+                <div class="icon">
+                  <span>Slack</span>
+                  <i class="devicon-slack-plain show"></i>
+                </div>
+
               </div>
             </div>
-            <div class="soft-skills" data-aos="zoom-in" data-aos-delay="500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <div
+              class="soft-skills"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000">
               <h3>Soft</h3>
               <div class="soft-skill">
                 <div>Project Management</div>
@@ -140,32 +239,60 @@
       </div>
       <section  class="projects-section container">
         <div class="sub-heading">
-          <span >Projects</span>
+          <span >projects</span>
         </div>
         <div id="projects" class="project">
           <div>
-            <div class="gif battleships" data-aos="fade-right" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
+            <div
+              class="gif battleships"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000">
               <img src="./assets/images/battleships.gif" alt="battleships">
             </div>
-            <div class="detail-section" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-duration="2000">
+            <div
+              class="detail-section"
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000">
               <div class="links">
                 <a href="#"> <i class="fab fa-github"></i></a>
-                <a href="http://edwardlea.com/project-01/" target="_blank"> <i class="fas fa-external-link-alt"></i></a>
+                <a
+                  href="http://edwardlea.com/project-01/"
+                  target="_blank"
+                >
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
               <div class="description">
                 <h3>Battleships - Single Page JavaScript Browser Game</h3>
-                <p>A seven day individual project to build a browser game as part of the GA Web Development Immersive course. My project was based on the classic game Battleships where the user plays against the computer. The aim of the game is to find the computer’s ships before the computer finds yours.
+                <p>
+                  A seven day individual project to build a browser game as part of the GA Web Development Immersive course. My project was based on the classic game Battleships where the user plays against the computer. The aim of the game is to find the computer’s ships before the computer finds yours.
                 </p>
               </div>
             </div>
           </div>
-          <div class="tech" data-aos="fade-bottom" data-aos-delay="1500" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+          <div
+            class="tech"
+            data-aos="fade-bottom"
+            data-aos-delay="1500"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div>HTML5</div>
             <div>CSS3</div>
             <div>JavaScript ES6</div>
             <div>jQuery</div>
           </div>
-          <div class="arrow-section" data-aos="fade-bottom" data-aos-delay="2500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <div
+            class="arrow-section"
+            data-aos="fade-bottom"
+            data-aos-delay="2500"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
             <a href="#project-2">
               <div class="arrow">
                 <div class="arrow-top"></div>
@@ -184,14 +311,16 @@
               data-aos-duration="2000">
               <div class="description" >
                 <h3>Health & Tasty - Front-end React Hackathon</h3>
-                <p>A one day paired coding Hackathon to create a front-end application as part of the General Assembly Web Development Immersive course. The app consumed publicly available API data and was built with a React.js front-end. Using the Food Standards Agency and Zomato APIs we were able to create an app where users could find local food establishments and understand the food hygiene rating.
+                <p>
+                  A one day paired coding Hackathon to create a front-end application as part of the General Assembly Web Development Immersive course. The app consumed publicly available API data and was built with a React.js front-end. Using the Food Standards Agency and Zomato APIs we were able to create an app where users could find local food establishments and understand the food hygiene rating.
                 </p>
               </div>
               <div class="links">
                 <a href="#"> <i class="fab fa-github"></i></a>
                 <a
                 href="https://react-health-and-tasty.herokuapp.com/"
-                target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                target="_blank"><i class="fas fa-external-link-alt"></i>
+              </a>
               </div>
             </div>
             <div
@@ -199,16 +328,17 @@
               data-aos="fade-left" data-aos-anchor-placement="top-bottom"
               data-aos-delay="500"
               data-aos-duration="2000">
-              <img src="./assets/images/bee-social.gif" alt="bee social">
+              <img src="./assets/images/hidden-gems.gif" alt="health and tasty"
+            >
             </div>
-
           </div>
           <div
             class="tech"
             data-aos="fade-bottom"
             data-aos-delay="1500"
             data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000">
+            data-aos-duration="2000"
+          >
             <div>HTML5</div>
             <div>CSS3</div>
             <div>JavaScript ES6</div>
@@ -221,7 +351,10 @@
           <div
             class="arrow-section"
             data-aos="fade-bottom"
-            data-aos-delay="2500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            data-aos-delay="2500"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
             <a href="#project-3">
               <div class="arrow">
                 <div class="arrow-top"></div>
@@ -248,12 +381,18 @@
               data-aos-duration="2000">
               <div class="links">
                 <a href="#"> <i class="fab fa-github"></i></a>
-                <a href="https://hidden-gems-2.herokuapp.com/" target="_blank"> <i class="fas fa-external-link-alt"></i></a>
+                <a
+                  href="https://hidden-gems-2.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
 
               </div>
               <div class="description">
                 <h3>Hidden Gems - MERN full stack application</h3>
-                <p>A seven day group project to build a full stack MERN application as part of the General Assembly Web Development Immersive course. The app was based on hidden gems, undiscovered cultural and creative venues and attractions, where users can find and add new 'Gems'. The application has full user authentication to create a profile for their 'Gems' and 'Trips'.I took ownership of the user profile page where users could follow other users and create new 'Trips' and 'Gems'. To effectively manage workload and resource we used a Kanban in the form of Trello to plan our project. We ran daily team stand ups to understand project progress and blockers.
+                <p>
+                  A seven day group project to build a full stack MERN application as part of the General Assembly Web Development Immersive course. The app was based on hidden gems, undiscovered cultural and creative venues and attractions, where users can find and add new 'Gems'. The application has full user authentication to create a profile for their 'Gems' and 'Trips'.I took ownership of the user profile page where users could follow other users and create new 'Trips' and 'Gems'. To effectively manage workload and resource we used a Kanban in the form of Trello to plan our project. We ran daily team stand ups to understand project progress and blockers.
                 </p>
               </div>
             </div>
@@ -278,7 +417,13 @@
             <div>Heroku</div>
             <div>Trello</div>
           </div>
-          <div class="arrow-section" data-aos="fade-bottom" data-aos-delay="2500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <div
+            class="arrow-section"
+            data-aos="fade-bottom"
+            data-aos-delay="2500"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
             <a href="#project-4">
               <div class="arrow">
                 <div class="arrow-top"></div>
@@ -286,27 +431,50 @@
               </div>
             </a>
           </div>
+          <hr/>
         </div>
         <div id="project-4" class="project">
           <div>
-            <div class="detail-section" data-aos="fade-right" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
+            <div
+              class="detail-section"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000"
+            >
               <div class="description" >
                 <h3>Bee Social - Full stack application</h3>
-                <p>A seven day paired project to build a full stack web application for my final project as part of the General Assembly Web Development Immersive course. The app is a platform where users can create and discover social events in their local area. For example organise a board game club or arrange a five-a-side football game. From a user’s profile they can find and attend events or follow clubs of interest. I took ownership of the club pages where users could follow a club, discover events the club was hosting and chat with other members of the club. Collaborating with another student allowed me to further develop my agile project management and team working skills.
+                <p>
+                  A seven day paired project to build a full stack web application for my final project as part of the General Assembly Web Development Immersive course. The app is a platform where users can create and discover social events in their local area. For example organise a board game club or arrange a five-a-side football game. From a user’s profile they can find and attend events or follow clubs of interest. I took ownership of the club pages where users could follow a club, discover events the club was hosting and chat with other members of the club. Collaborating with another student allowed me to further develop my agile project management and team working skills.
                 </p>
               </div>
               <div class="links">
                 <a href="#"> <i class="fab fa-github"></i></a>
-                <a href="https://wdi-bee-social.herokuapp.com/" target="_blank"> <i class="fas fa-external-link-alt"></i></a>
-
+                <a
+                  href="https://wdi-bee-social.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
-            <div class="gif bee-social" data-aos="fade-left" data-aos-anchor-placement="top-bottom"  data-aos-delay="500" data-aos-duration="2000">
+            <div
+              class="gif bee-social"
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+              data-aos-duration="2000"
+            >
               <img src="./assets/images/bee-social.gif" alt="bee social">
             </div>
-
           </div>
-          <div class="tech" data-aos="fade-bottom" data-aos-delay="1500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <div
+            class="tech"
+            data-aos="fade-bottom"
+            data-aos-delay="1500"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
             <div>HTML5</div>
             <div>CSS3</div>
             <div>JavaScript ES6</div>
@@ -322,7 +490,13 @@
             <div>Heroku</div>
             <div>Trello</div>
           </div>
-          <div class="arrow-section" data-aos="fade-bottom" data-aos-delay="2500" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <div
+            class="arrow-section"
+            data-aos="fade-bottom"
+            data-aos-delay="2500"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
             <a href="#contact">
               <div class="arrow">
                 <div class="arrow-top"></div>
@@ -332,16 +506,21 @@
           </div>
         </div>
       </section>
-
     </main>
-
     <footer id='contact'>
       <div class="contact">
-        <a><i class="fab fa-github"></i> EdwardLea</a>
-        <a><i class="fab fa-linkedin-in"></i> linkedin.com/in/edward-lea</a>
-        <a><i class="fas fa-envelope-square"></i> etmlea@gmail.com</a>
+        <div>
+          <span>I'd love to hear from you...</span>
+        </div>
+        <div class="sub-heading">
+          <span>contact me</span>
+        </div>
+        <div class="contact-details">
+          <a href="https://github.com/EdwardLea" target="_blank"><i class="fab fa-github show"></i><span>EdwardLea</span></a>
+          <a href="https://linkedin.com/in/edward-lea" target="_blank"><i class="fab fa-linkedin-in show"></i><span>linkedin.com/in/edward-lea</span></a>
+          <a href="mailto:etmlea@gmail.com" target="_blank"><i class="fas fa-envelope-square show"></i><span>etmlea@gmail.com</span></a>
+        </div>
       </div>
-    </footer>
-
+    </footer
   </body>
 </html>
