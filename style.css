@@ -154,7 +154,7 @@ header {
 .me {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center; }
   .me h2 {
     text-align: center;
@@ -465,18 +465,20 @@ footer {
       .skills .container .skills-body .web-icons, .skills .container .skills-body .soft-skill {
         justify-content: center; }
 
-  .projects-section .project {
-    height: auto;
-    margin: 2em; }
-    .projects-section .project .arrow-section {
-      display: none; }
-    .projects-section .project > div:first-child {
-      flex-direction: column; }
-      .projects-section .project > div:first-child .detail-section {
+  .projects-section {
+    overflow-x: hidden; }
+    .projects-section .project {
+      height: auto;
+      margin: 2em; }
+      .projects-section .project .arrow-section {
+        display: none; }
+      .projects-section .project > div:first-child {
         flex-direction: column; }
-        .projects-section .project > div:first-child .detail-section > .links {
-          flex-direction: row;
-          padding: 20px; }
+        .projects-section .project > div:first-child .detail-section {
+          flex-direction: column; }
+          .projects-section .project > div:first-child .detail-section > .links {
+            flex-direction: row;
+            padding: 20px; }
 
   footer .contact {
     flex-direction: column;

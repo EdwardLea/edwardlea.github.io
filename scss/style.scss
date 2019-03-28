@@ -204,7 +204,7 @@ bottom: 0;
 .me{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   h2{
     text-align: center;
@@ -553,7 +553,10 @@ footer{
 
 @media only screen and (max-width: 769px) {
 
+
+
   header{
+
     nav{
       .nav-toggle{
         margin-top: 20px;
@@ -627,6 +630,9 @@ footer{
     }
   }
   .projects-section{
+    overflow-x: hidden;
+
+
     .project{
       height: auto;
       margin: 2em;
@@ -646,6 +652,8 @@ footer{
     }
   }
   footer{
+
+
     .contact{
       flex-direction: column;
       justify-content: space-around;
