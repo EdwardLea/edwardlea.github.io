@@ -90,6 +90,8 @@ header {
           header nav .nav-body > div:nth-child(2) div p a {
             text-decoration: none;
             color: #CCA43B; }
+          header nav .nav-body > div:nth-child(2) div p span {
+            font-weight: 800; }
         header nav .nav-body > div:nth-child(2) div:last-child {
           flex-grow: 1; }
   header .hero {
@@ -167,7 +169,7 @@ header {
       border: #CCA43B 0.5px solid;
       margin-top: 20px; }
   .me p {
-    font-weight: 200; }
+    font-weight: 300; }
   .me .show-section {
     display: flex; }
     .me .show-section > div {
@@ -195,7 +197,7 @@ header {
         .me .show-section > div .title .word span.show {
           opacity: 1; }
       .me .show-section > div .text {
-        display: none; }
+        display: block; }
 
 .skills .container {
   height: 100vh;
@@ -451,7 +453,10 @@ footer {
     .me .show-section {
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 100%; }
+      .me .show-section > div {
+        width: 100%; }
       .me .show-section p {
         width: 100%; }
 

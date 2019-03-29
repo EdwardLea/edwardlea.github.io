@@ -112,6 +112,9 @@ header{
               text-decoration: none;
               color: $yellow;
             }
+            span{
+              font-weight: 800;
+            }
           }
         }
         div:last-child{
@@ -210,7 +213,6 @@ bottom: 0;
     text-align: center;
     font-size: 16px;
     margin-bottom: 50px;
-
     span{
       color: $grey;
       font-weight: 100;
@@ -219,8 +221,9 @@ bottom: 0;
       margin-top: 20px;
     }
   }
+
   p{
-    font-weight: 200;
+    font-weight: 300;
   }
   .show-section{
     display: flex;
@@ -257,7 +260,7 @@ bottom: 0;
         }
       }
       .text{
-        display: none;
+        display: block;
       }
     }
   }
@@ -609,6 +612,10 @@ footer{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 100%;
+      >div{
+        width: 100%;
+      }
       p{
         width: 100%
       }
@@ -631,8 +638,6 @@ footer{
   }
   .projects-section{
     overflow-x: hidden;
-
-
     .project{
       height: auto;
       margin: 2em;
@@ -652,8 +657,6 @@ footer{
     }
   }
   footer{
-
-
     .contact{
       flex-direction: column;
       justify-content: space-around;
