@@ -60,6 +60,7 @@ header{
       height: 20%;
       margin: auto;
       display: flex;
+      display: -webkit-flex;
       position: fixed;
       top: 10px;
       padding: 0 20px 0 20px;
@@ -79,12 +80,14 @@ header{
       }
       >div:first-child{
         display: flex;
+        display: -webkit-flex;
         height: 25%;
         padding: 0;
         width: 100%;
         >a{
           flex-grow: 1;
           display: flex;
+          display: -webkit-flex;
           justify-content: center;
           align-items: center;
           border: $yellow 0.5px solid;
@@ -96,6 +99,7 @@ header{
       >div:nth-child(2){
         height: 25%;
         display: flex;
+        display: -webkit-flex;
         text-align: right;
         align-items: center;
         width: 100%;
@@ -122,6 +126,7 @@ header{
   }
   .hero{
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -195,7 +200,7 @@ bottom: 0;
   background: url('./assets/images/image-4.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
@@ -369,8 +374,10 @@ bottom: 0;
       height: auto;
       .gif{
         display: flex;
+        display: -webkit-flex;
         align-items: center;
         flex: 1 0 0;
+        -webkit-flex: 1 0 0;
         width: 100%;
         img{
           width: 100%;
@@ -379,9 +386,11 @@ bottom: 0;
       }
       .detail-section{
         display: flex;
-        flex: 1 0 0;
+        display: -webkit-flex;
+        -webkit-flex: 1 0 0;
         .links{
           display: flex;
+          display: -webkit-flex;
           flex-direction: column;
           justify-content: space-around;
           margin: 0 10px 0 10px;
@@ -392,8 +401,10 @@ bottom: 0;
           }
         }
         .description{
-          flex-grow: 1;
           display: flex;
+          display: -webkit-flex;
+          flex-grow: 1;
+          -webkit-flex-grow: 1;
           flex-direction: column;
           font-weight: 300;
         }
