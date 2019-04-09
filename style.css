@@ -140,7 +140,7 @@ header {
   background: url("./assets/images/image-3.jpg");
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat; }
 
 .image-2 {
