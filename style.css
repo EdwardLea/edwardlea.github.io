@@ -2,13 +2,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth; }
 
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; }
-
 html {
   width: 100%;
   height: 100%;
@@ -16,6 +9,11 @@ html {
   padding: 0px; }
 
 body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   background-color: #E5E5E5;
   margin: 0;
   color: #CCA43B;
@@ -484,6 +482,10 @@ footer {
           .projects-section .project > div:first-child .detail-section > .links {
             flex-direction: row;
             padding: 20px; }
+    .projects-section .project:nth-child(even) > div:first-child {
+      flex-direction: column-reverse; }
+      .projects-section .project:nth-child(even) > div:first-child .detail-section {
+        flex-direction: column-reverse; }
 
   footer .contact {
     flex-direction: column;
