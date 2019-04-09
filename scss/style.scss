@@ -570,9 +570,11 @@ footer{
       .nav-toggle{
         margin-top: 20px;
         display: flex;
+        display: -webkit-flex;
       }
       .nav-body{
         display: flex;
+        display: -webkit-flex;
         margin-top: 20px;
         height: 40%;
         position: absolute;
@@ -674,7 +676,6 @@ footer{
         }
       }
     }
-
   }
   footer{
     .contact{
