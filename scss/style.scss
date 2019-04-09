@@ -414,7 +414,9 @@ bottom: 0;
   .tech{
     padding-top: 10px;
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     justify-content: center;
     >div{
       padding: 5px;
@@ -650,10 +652,13 @@ footer{
       }
       >div:first-child{
         flex-direction: column;
+        -webkit-flex-direction: column;
         .detail-section{
           flex-direction: column;
+          -webkit-flex-direction: column;
           >.links{
             flex-direction: row;
+            -webkit-flex-direction: row;
             padding: 20px;
           }
         }
@@ -662,8 +667,10 @@ footer{
     .project:nth-child(even){
       >div:first-child{
         flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
         .detail-section{
           flex-direction: column-reverse;
+          -webkit-flex-direction: column-reverse;
         }
       }
     }
