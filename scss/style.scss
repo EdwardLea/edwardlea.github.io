@@ -647,18 +647,26 @@ footer{
   .projects-section{
     overflow-x: hidden;
     .project{
+      display: flex;
+      display: -webkit-flex;
       height: auto;
       margin: 2em;
       .arrow-section{
         display: none;
       }
       >div:first-child{
+        display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         -webkit-flex-direction: column;
         .detail-section{
+          display: flex;
+          display: -webkit-flex;
           flex-direction: column;
           -webkit-flex-direction: column;
           >.links{
+            display: flex;
+            display: -webkit-flex;
             flex-direction: row;
             -webkit-flex-direction: row;
             padding: 20px;

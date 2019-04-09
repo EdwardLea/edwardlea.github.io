@@ -486,17 +486,25 @@ footer {
   .projects-section {
     overflow-x: hidden; }
     .projects-section .project {
+      display: flex;
+      display: -webkit-flex;
       height: auto;
       margin: 2em; }
       .projects-section .project .arrow-section {
         display: none; }
       .projects-section .project > div:first-child {
+        display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         -webkit-flex-direction: column; }
         .projects-section .project > div:first-child .detail-section {
+          display: flex;
+          display: -webkit-flex;
           flex-direction: column;
           -webkit-flex-direction: column; }
           .projects-section .project > div:first-child .detail-section > .links {
+            display: flex;
+            display: -webkit-flex;
             flex-direction: row;
             -webkit-flex-direction: row;
             padding: 20px; }
