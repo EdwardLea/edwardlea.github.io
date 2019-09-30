@@ -29,7 +29,7 @@ h1, h2, h3 {
 main .container {
   max-width: 1000px;
   margin: auto;
-  padding: 100px 20px 100px 20px; }
+  padding: 150px 20px 100px 20px; }
 
 header {
   background-color: #696773;
@@ -60,7 +60,8 @@ header {
         border: #CCA43B 0.5px solid;
         background-color: #696773;
         width: 100%;
-        margin: -0.5px 20px -0.5px 20px; }
+        margin: -0.5px 20px -0.5px 20px;
+        min-height: 36px; }
       header nav .nav-body > div:first-child {
         display: flex;
         display: -webkit-flex;
@@ -488,6 +489,8 @@ footer {
     .projects-section .project {
       display: flex;
       display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
       height: auto;
       margin: 2em; }
       .projects-section .project .arrow-section {
