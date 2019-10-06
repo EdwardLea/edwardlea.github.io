@@ -659,17 +659,25 @@ footer{
       }
       >div:first-child{
         display: flex;
+        flex: 1;
+        -webkit-box-flex: 1;        
+        -webkit-flex: 1;
         display: -webkit-flex;
         flex-direction: column;
         -webkit-flex-direction: column;
         .detail-section{
           display: flex;
+          flex: 1;
+        -webkit-box-flex: 1;        
+        -webkit-flex: 1;
           display: -webkit-flex;
           flex-direction: column;
           -webkit-flex-direction: column;
           >.links{
             display: flex;
-            display: -webkit-flex;
+            display: -webkit-flex;flex: 1;
+            -webkit-box-flex: 1;        
+            -webkit-flex: 1;
             flex-direction: row;
             -webkit-flex-direction: row;
             padding: 20px;
